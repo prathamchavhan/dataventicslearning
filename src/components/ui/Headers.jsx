@@ -82,10 +82,12 @@ export default function Header() {
       {/* ✅ Button outside nav-wrapper */}
       <button
         className="head-but"
-        onClick={() => navigate("/contact")}
-      >
-     DV
-      </button>
+          onClick={() => {
+                window.open("http://localhost:5172", "_blank");
+                  }}
+                  >
+                DV
+                </button>
     </header>
   );
 }
